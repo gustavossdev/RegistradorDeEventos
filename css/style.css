@@ -12,7 +12,7 @@ body{
     min-height: 100vh;
     background-color: #fff;
     color: #222327;
-    padding-top: 55px;
+    padding-top: 60px;
 }
 
 header{
@@ -23,10 +23,10 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background: #f0f0e1;
     transition: all .50s ease;
-    border: solid black 1px;
     height: 50px;
+    background: #f0f0f0;
+    
 }
 
 nav ul{
@@ -103,12 +103,12 @@ nav a:active{
     color: #fff;
 }
 
-@media (max-width: 1280px){
-    header{
-        padding: 2vh 2%;
-        transition: .2s;
-    }
+.event-title{
+    display: flex;
+    justify-content: center;
+}
 
+@media (max-width: 1280px){
     nav a {
         padding: 5px 0;
         margin: 0px 20px;
@@ -117,19 +117,20 @@ nav a:active{
 
 @media (max-width: 768px) {
     nav ul {
-        display: none; /* Escondemos a navegação em telas pequenas */
-        flex-direction: column; /* Organiza os itens verticalmente */
+        display: flex;
+        flex-direction: column;
         width: 270px;
-        height: 29vh;
-        background-color: #fff; /* Fundo para o menu */
+        height: 170px;
+        background-color: #fff;
         position: fixed;
         padding: 10px 0;
         transition: all .50s ease;
         border-radius: 10px;
+        left: -100%;
     }
 
-    nav ul.active {
-        display: block; /* Exibe a navegação quando o menu for ativado */
+    nav ul.open {
+        left: 4%;
     }
 
     nav a {
@@ -148,20 +149,20 @@ nav a:active{
         color: #222327;
     }
 
-    .menu-icon {
-        display: block; /* Exibe o ícone do menu */
+    #menu-icon {
+        display: block;
         cursor: pointer;
-        font-size: 30px;
+        font-size: 40px;
         color: #222327;
     }
 
-    .menu-icon.active {
+    #menu-icon.active {
         color: #222327;
     }
 
     header {
-        padding: 2vh 5%;
-        justify-content: space-between;
+        padding-left: 5%;
+        justify-content: flex-start;
     }
 
     h3{
@@ -171,7 +172,7 @@ nav a:active{
 }
 
 @media (min-width: 769px) {
-    .menu-icon {
+    #menu-icon {
         display: none; /* Esconde o ícone em telas maiores que 768px */
     }
 }
