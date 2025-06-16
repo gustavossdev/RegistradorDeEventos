@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html> 
+<html lang="pt-br"> 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrador de Eventos</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css"> 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,22 +24,23 @@
            <span class="material-symbols-outlined menu" id="menu-icon" onclick="toggleMenu()">menu</span>
             <ul id="navbar">
                 <li><a href="../html/index.html">Home</a></li>
-                <li><a href="../html/add_events.html">Adicionar Eventos</a></li>
+                <li><a href="" class="addtext">Adicionar Texto</a></li>
+                <li><a href="" class="addimg">Adicionar Imagem</a></li>
                 <li><a href="">SAC</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <div id="divBtnCard">
-        <button id="addCardBtn">Adicionar Card</button>
+        <div id="mural">
         </div>
-        <div class="card-container" id="cardsContainer"></div>
-                <!-- Cards serão adicionados aqui via JavaScript -->
-        </div>    
-        
-        <script src="../script/addCard.js"></script>
+        <div id="addEvent">
+            <button>Adicionar Evento</button>
+        </div>
+
         <script src="../script/script.js"></script>
+        <script src="../script/addtext.js"></script>
+        <script src="../script/addimg.js"></script>
     </main>
 
 
